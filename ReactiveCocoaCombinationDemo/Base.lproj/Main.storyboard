@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tIF-Jb-Gl5">
+                                <rect key="frame" x="96" y="80" width="183" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SHq-hs-tVh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDU-hk-4BE">
+                                <rect key="frame" x="96" y="200" width="183" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o96-WG-uew">
+                                <rect key="frame" x="96" y="140" width="183" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tIF-Jb-Gl5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="EB8-gQ-Luo"/>
+                            <constraint firstItem="o96-WG-uew" firstAttribute="trailing" secondItem="tIF-Jb-Gl5" secondAttribute="trailing" id="FnJ-aN-seQ"/>
+                            <constraint firstItem="wDU-hk-4BE" firstAttribute="trailing" secondItem="o96-WG-uew" secondAttribute="trailing" id="IuZ-Kn-Rby"/>
+                            <constraint firstItem="wDU-hk-4BE" firstAttribute="leading" secondItem="o96-WG-uew" secondAttribute="leading" id="QNI-lI-eqc"/>
+                            <constraint firstItem="tIF-Jb-Gl5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="TkY-z5-g0x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tIF-Jb-Gl5" secondAttribute="trailing" constant="80" id="ehj-LJ-nBJ"/>
+                            <constraint firstItem="o96-WG-uew" firstAttribute="top" secondItem="tIF-Jb-Gl5" secondAttribute="bottom" constant="30" id="j4M-1c-sra"/>
+                            <constraint firstItem="wDU-hk-4BE" firstAttribute="top" secondItem="o96-WG-uew" secondAttribute="bottom" constant="30" id="lwx-dc-erf"/>
+                            <constraint firstItem="o96-WG-uew" firstAttribute="leading" secondItem="tIF-Jb-Gl5" secondAttribute="leading" id="r7o-xu-Qbc"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="accountTF" destination="tIF-Jb-Gl5" id="Eu4-Pc-4xk"/>
+                        <outlet property="loginBtn" destination="wDU-hk-4BE" id="XEv-FA-xGa"/>
+                        <outlet property="pwdTF" destination="o96-WG-uew" id="bKG-4C-Qk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
